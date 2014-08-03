@@ -25,8 +25,9 @@ public class MainActivity extends Activity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        ActionBar actionBar = getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        // show detail activity
+        Intent intent = new Intent(this, DetailActivity.class);
+        startActivity(intent);
     }
 
     @Override
